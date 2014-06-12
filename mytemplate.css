@@ -1,0 +1,26 @@
+body {
+  padding-top: 50px;
+  /*background-image: url(https://s3.amazonaws.com/ooomf-com-files/HHEvkhEsQLaNDRkui4fg_fullsize.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;*/
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+
+/*.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}*/
+.container .text-muted {
+  margin: 20px 0;
+}
