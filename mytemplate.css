@@ -25,12 +25,10 @@ body {
   text-align: center;
 }
 
-.boxed {
-  width: 400px ;
-  margin-left: auto ;
-  margin-right: auto ;
-}
-
 .divider {
   margin: 50px 50px; /* Space out the Bootstrap <hr> more */
+}
+
+.dividersmall {
+  margin: 50px 300px;
 }
