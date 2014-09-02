@@ -2,12 +2,12 @@
 // console.log("Gradient js loaded")
 
 var colors = new Array(
-  [62,35,255],
-  [60,255,60],
-  [255,35,98],
-  [45,175,230],
-  [255,0,255],
-  [255,128,0]);
+  [44, 145, 223], /*1 Color Left*/
+  [110, 233, 133], /*2 Color Left*/
+  [110, 233, 225], /*1 Color right*/
+  [255, 213, 0],  /*2 Color right*/
+  [255, 0, 86],
+  [213, 0, 255]);
 
 var step = 0;
 //color table indices for: 
@@ -18,7 +18,7 @@ var step = 0;
 var colorIndices = [0,1,2,3];
 
 //transition speed
-var gradientSpeed = 0.002;
+var gradientSpeed = 0.004;
 
 function updateGradient()
 {
