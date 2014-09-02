@@ -3,8 +3,8 @@
   <meta charset="utf-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <meta name="viewport" content="width=device-width, initial-scale=1" >
-  <meta name="description" content="" >
-  <meta name="author" content="" >
+  <meta name="description" content="Maxime Dupuy Personnal Website" >
+  <meta name="author" content="Maxime Dupuy" >
   <link rel="shortcut icon" href="./bootstrap/assets/ico/favicon.ico" >
 
   <title>Maxime Dupuy</title>
@@ -16,23 +16,19 @@
   <link href="mytemplate.css" rel="stylesheet" >
   <link href="./octicons/octicons.css" rel="stylesheet" >
   <style type="text/css" >
-.boxed {
-	margin:50px 0px 50px 0px;
-}
+    .boxed {
+    	margin:50px 0px 50px 0px;
+    }
 
-.jumbotron {
-/*	background-image:url(images/background.jpg);
-	background-size:100%;
-  background-repeat: no-repeat;
-	background-attachment:fixed;
-	text-align:justify;*/
-}
+    #gradientText {
+      color: white;
+    }
 
-.witespace {
-  height: 400px;
-}
+    .witespace {
+      height: 400px;
+    }
 
-</style>
+  </style>
 
   <!-- Just for debugging purposes. Don't actually copy this line! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -79,11 +75,11 @@
 
   <!-- Begin page content -->
 
-  <div class="jumbotron" style="" >
-    <h1 class="centered" >Welcome</h1>
+  <div class="jumbotron" id="gradient">
+    <h1 class="centered" id="gradientText">Welcome</h1>
     <div class="row" >
       <div class="col-md-6 col-md-offset-3" >
-        <h2> This is my personnal website sort of portfolio of all my projects and a front page of me for the world to see.</h2>
+        <h2 id="gradientText"> This is my personnal website sort of portfolio of all my projects and a front page of me for the world to see.</h2>
       </div>
     </div>
   </div>
@@ -247,8 +243,8 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
   <script src="./bootstrap/js/bootstrap.min.js" ></script>
-
+  <script src="./js/gradient.js"></script>
 
 </body></html>
