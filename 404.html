@@ -8,7 +8,7 @@
     <meta name="author" content="Maxime Dupuy" >
     <link rel="shortcut icon" href="./bootstrap/assets/ico/favicon.ico">
 
-    <title>Maxime Dupuy - Contact</title>
+    <title>Maxime Dupuy - 404</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,18 +17,12 @@
     <link href="mytemplate.css" rel="stylesheet">
     <style type="text/css">
     #footer {
-      /*position: absolute;*/
-    }
-    .row {
-      margin: 50px 20px;
-    }
+      position: absolute;
+    } 
 
-    .jumbotron{
-      border-radius: 2%;
-    }
-
-    .img-circle{
-      width: 50%;
+    #mid {
+      margin-top: 20%;
+      text-align: center;
     }
 
     </style>
@@ -43,7 +37,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body id="gradient">
 
   <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -61,7 +55,7 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="projects.html"> <span class="glyphicon glyphicon-briefcase"></span> Projects</a></li>
-            <li class="active"><a href="contact.html"> <span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+            <li><a href="contact.html"> <span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
@@ -77,20 +71,11 @@
     </div>
 
     <!-- Begin page content -->
-
-
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="jumbotron">
-          <p class="centered"> <img class="img-circle" src="./images/profile.jpeg"> </p>
-          <h2 class="centered">Maxime Dupuy</h2>
-          <h3 class="centered"> <a href="mailto:&#109;&#100;&#117;&#112;&#117;&#121;&#064;&#104;&#097;&#119;&#107;&#046;&#105;&#105;&#116;&#046;&#101;&#100;&#117;"> <span class="glyphicon glyphicon-envelope"></span> </a> </h3>
-          <p class="centered"><a href="https://www.linkedin.com/in/maximedupuy/en">Linkedin</a> - <a href="https://twitter.com/maxoududu">Twitter</a> - <a href="https://www.facebook.com/maxoududu">Facebook</a> </p>
-        </div>
-      </div>
+    <div class="container-fluid" id="mid">
+      <h1 style="font-size: 1000%; color: white;">404</h1>
+      <h2 style="font-size: 250%; color: white;">Page not found.</h2>
     </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    
 
     <!-- Footer content -->
     <div id="footer">
@@ -119,5 +104,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/gradient.js"></script>
   </body>
 </html>
