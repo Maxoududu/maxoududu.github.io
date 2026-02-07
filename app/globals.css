@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@200&family=Noto+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: 0 0% 8%;
+  --foreground: 0 0% 96%;
+  --card: 0 0% 12%;
+  --card-foreground: 0 0% 96%;
+  --border: 0 0% 22%;
+  --primary: 0 0% 96%;
+  --primary-foreground: 0 0% 8%;
+  --muted: 0 0% 18%;
+  --muted-foreground: 0 0% 72%;
+}
+
+* {
+  @apply border-border;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Doto", sans-serif;
+}
+
+.typing-name {
+  --type-chars: 12;
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.typing-name::after {
+  content: "";
+  width: 0.08em;
+  height: 1em;
+  margin-left: 0.05em;
+  background: hsl(var(--foreground));
+  animation: blink-caret 0.8s step-end infinite;
+}
+
+.typing-text {
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type-name 2.8s steps(var(--type-chars), end) 0.2s forwards;
+}
+
+.blog-cursor {
+  width: 0.1em;
+  height: 1.2em;
+  background: hsl(var(--foreground));
+  animation: blink-caret 0.8s step-end infinite;
+}
+
+@keyframes type-name {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: calc(var(--type-chars) * 1ch);
+  }
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typing-text {
+    width: auto;
+    animation: none;
+  }
+
+  .typing-name::after {
+    display: none;
+  }
+}
